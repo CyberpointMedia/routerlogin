@@ -1,0 +1,934 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/output.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header start here -->
+    <header class="w-full py-5 bg-white lg:drop-shadow-lg relative z-50">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" class="h-8" alt="Flowbite Logo">
+                </a>
+
+                <!-- humburger menu start -->
+                <button id="mobile-menu-button" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-black-500 lg:hidden focus:outline-none" aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg id="menu-icon-open" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                    <svg id="menu-icon-close" class="hidden w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <!-- humburger menu end -->
+
+                <!-- nav start here -->
+                <div class="" id="navbar-sticky">
+                    <ul class="flex flex-col p-4 lg:p-0 lg:space-x-10 rtl:space-x-reverse lg:flex-row lg:mt-0">
+                        <li class="relative group">
+                            <a href="javascript:void(0);" class="block p-3 text-black opacity-70 hover:text-red duration-300 text-base lg:p-0" aria-current="page">Router Login
+                            </a>
+                            
+                            <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[10px] lg:top-[7px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                            <!-- mega menu start -->
+                            <div class="mega-menu-dropdown absolute top-0 lg:-left-12 transition lg:group-hover:translate-y-5 lg:translate-y-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-500 ease-in-out lg:group-hover:transform z-50 min-w-[220px] lg:transform">
+                                <div class="relative top-0 lg:top-[22px] px-6 pb-[10px] bg-white rounded-md lg:shadow-2xl shadow-xl w-full border">
+                                    <div class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
+                                    </div>
+
+                                    <div class="relative z-10">
+                                        <div class="">
+                                            <ul class="mt-3 text-[15px]">
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        Default IP Addresses
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        Default Logins
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        Router Brands
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mega menu end -->
+                        </li>
+                        <li class="relative group">
+                            <a href="javascript:void(0);" class="block p-3 text-black opacity-70 hover:text-red duration-300 text-base lg:p-0">Tools
+                            </a>
+                            <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[10px] lg:top-[7px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                            <!-- mega menu start -->
+                            <div class="mega-menu-dropdown absolute top-0 lg:-left-12 transition lg:group-hover:translate-y-5 lg:translate-y-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-500 ease-in-out lg:group-hover:transform z-50 min-w-[200px] lg:transform">
+                                <div class="relative top-0 lg:top-[22px] px-6 pb-[10px] bg-white rounded-md lg:shadow-2xl shadow-xl w-full border">
+                                    <div class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
+                                    </div>
+
+                                    <div class="relative z-10">
+                                        <div class="">
+                                            <ul class="mt-3 text-[15px]">
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        What is my IP?
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        Port Checker
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        What is my ISP?
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mega menu end -->
+                        </li>
+                        <li class="relative group">
+                            <a href="javascript:void(0);" class="block p-3 text-black opacity-70 hover:text-red duration-300 text-base lg:p-0">Articles
+                            </a>
+                            <svg class="w-2.5 h-2.5 ms-1 inline-block absolute lg:right-[-16px] right-[10px] lg:top-[7px] top-[16px] dropdown_arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                            </svg>
+                            <!-- mega menu start -->
+                            <div class="mega-menu-dropdown absolute top-0 lg:-left-12 transition lg:group-hover:translate-y-5 lg:translate-y-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible duration-500 ease-in-out lg:group-hover:transform z-50 min-w-[200px] lg:transform">
+                                <div class="relative top-0 lg:top-[22px] px-6 pb-[10px] bg-white rounded-md lg:shadow-2xl shadow-xl w-full border">
+                                    <div class="w-10 h-10 bg-white transform rotate-45 absolute top-0 left-0 z-[-1] transition-transform lg:translate-x-[4rem] translate-x-[1rem] duration-500 ease-in-out rounded-sm border">
+                                    </div>
+
+                                    <div class="relative z-10">
+                                        <div class="">
+                                            <ul class="mt-3 text-[15px]">
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        Help
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        Reviews
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        Technical
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        HowTo
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block p-2 -mx-2 ease-in-out text-black opacity-70 hover:text-red duration-300 text-base">
+                                                        Education
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mega menu end -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- nav end here -->
+            </div>
+        </div>
+    </header>
+    <!-- header end here -->
+    <main>
+        <!-- banner section start here -->
+        <section class="flex justify-center items-center pt-5">
+            <div class="container">
+                <nav>
+                    <ol class="flex items-center">
+                      <li class="px-2"><a href="index.html" class="hover:text-red text-sm block">Home</a></li>
+                      <li class="text-sm">/</li>
+                      <li class="px-2"><a href="index.html" class="hover:text-red text-sm block">IP</a></li>
+                      <li class="text-sm">/</li>
+                      <li class="px-2 opacity-70 text-sm">192-168-1-1</li>
+                    </ol>
+                </nav>
+            </div>       
+        </section>
+        <!-- banner section end here -->
+
+
+        <!-- Login Admin section start here -->
+        <section class="bg-white pt-[70px]">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row">
+                    <!-- left col start here -->
+                    <div class="lg:w-2/3 w-full">
+                        <h1 class="text-4xl font-medium mb-[30px]">192.168.0.1 - Login Admin</h1>
+                        <div class="border border-[#EF4444] rounded-[10px] overflow-hidden mb-[30px]">
+                            <div class="py-3 px-6 bg-red text-white">
+                                <strong class="interFont text-[22px] font-semibold">192.168.0.1 IP Address</strong>
+                            </div>
+                            <div class="py-6 px-7 bg-white border-b border-[#E9E9E9]">
+                                <p class="interFont">
+                                    To access the admin page, type <a href="javascript:void(0);" class="text-red underline">192.168.0.1</a> into your web browser's address bar or click on the link below.
+                                </p>
+                                <div class="flex">
+                                    <a href="login.html" class="bg-green interFont text-white text-[22px] rounded-[5px] text-center py-2 px-12 hover:opacity-70 me-3">Login</a>
+
+                                    <a href="login.html" class="bg-red interFont text-white text-[22px] rounded-[5px] text-center py-2 px-12 hover:opacity-70 me-3">Admin</a>
+                                </div>
+                            </div>
+
+                            <div class="pt-5 px-7">
+                                <p class="text-sm">
+                                    Based on your local ip address, this should be your router admin ip address. This is only the case if you are in the same network as your wifi router.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p>
+                            Your router settings are a core part of managing and maintaining your network security. Yet, accessing your router’s control panel is not as straightforward as in other wireless devices. For instance, to access your phone settings, you only need to open your Settings app. A router lacks such access apps. 
+                        </p>
+
+                        <p>
+                            So how do you access your router’s settings?  This is where gateway IP addresses come in.  We will discuss how to login to your router using this default IP address, how to troubleshoot login problems and  other aspects to optimize your private network.
+                        </p>
+
+                        <h2 class="text-4xl font-semibold mb-5">What is 192.168.0.1?</h2>
+
+                        <p>
+                            192.168.0.1 is a prominent number in networking and you’ve probably come across it. It's a default IP address that directs you to the admin panel of a router. Through this gateway, you’re able to customize your network settings, including setting up and changing the WiFi password.
+                        </p>
+
+                        <div class="border border-[#EF4444] rounded-[10px] p-[30px] shadow-custom mb-12 mt-7">
+                            <div class="flex flex-col md:flex-row items-center justify-between">
+                                <div class="md:w-[68%] w-full">
+                                    <h3 class="text-[22px] font-semibold mb-5">Protect Your Online Privacy Instantly!</h3>
+                                    <p>
+                                        Browsing the web with an exposed IP address is risky. Keep your online activities private and secure with <a href="javascript:void(0);" class="text-red">ExpressVPN</a>. Whether accessing your router at <a href="javascript:void(0);" class="text-red">192.168.1.1</a> or surfing the net, <a href="javascript:void(0);" class="text-red">ExpressVPN</a> ensures your digital safety. Don't leave your privacy to chance.
+                                    </p>
+                                    <a href="javascript:void(0);" class="text-red font-medium hover:opacity-70">Get ExpressVPN Now!</a>
+                                </div>
+                                <div class="md:w-[28%] w-full">
+                                    <img class="mb-2" src="images/express-vpn-logo.svg" alt="#" />
+                                    <img src="images/desktop-mobile-img.svg" alt="#" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="text-4xl font-semibold mb-5">How to Login to 192.168.0.1?</h2>
+                        <p>Follow this step-by-step guide to login to 192.168.0.1:</p>
+
+                        <div class="my-[30px] bg-[#22C55E] p-[30px] bg-opacity-10 rounded-[10px]">
+                            <ol class="ps-5 customList">
+                                <li><b class="font-medium">Connect</b> your login device to the router’s network.</li>
+                                <li>Open your <b class="font-medium">web browser.</b></li>
+                                <li><b class="font-medium">Type 192.168.0.1</b> on the browser’s address bar and click Enter.</li>
+                                <li>Input the router’s<b class="font-medium"> default username and password</b> in the login page. You can find these credentials on the user manual.</li>
+                                <li>Click<b class="font-medium"> login.</b></li>
+                            </ol>
+                        </div>
+
+                        <p>That’s all! You are on the router’s admin panel and can customize the router settings as you wish.</p>
+
+                        <h2 class="text-4xl font-semibold mb-5">What is the 192.168.0.1 Login Username and Password?</h2>
+
+                        <p>
+                            192.168.0.1 IP login username and password varies depending on the router brand. While it is essential to consult your router's documentation for precise details, some common default usernames and default passwords include:
+                        </p>
+                        <div class="overflow-hidden border border-[#E9E9E9] rounded-[10px] my-[30px]">
+                            <table class="w-full divide-y divide-gray-200 border-collaps">
+                                <thead class="bg-red text-white text-left">
+                                    <tr>
+                                        <th class="px-5 py-3 font-normal">Username</th>
+                                        <th class="px-5 py-3 font-normal">Password</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="divide-x divide-gray-200 bg-white">
+                                        <td class="px-5 py-3">admin</td>
+                                        <td class="px-5 py-3">admin</td>
+                                    </tr>
+                                    <tr class="divide-x divide-gray-200 bg-[#EF4444] bg-opacity-10">
+                                        <td class="px-5 py-3">admin</td>
+                                        <td class="px-5 py-3">password</td>
+                                    </tr>
+                                    <tr class="divide-x divide-gray-200 bg-white">
+                                        <td class="px-5 py-3">admin</td>
+                                        <td class="px-5 py-3">1234</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>
+                            It is strongly recommended to change the default login credentials after logging in to enhance your network's security. 
+                        </p>
+
+                        <h2 class="text-4xl font-semibold mb-5">How to Change the Router's WiFi Password or SSID?</h2>
+
+                        <p>
+                            Regularly changing your router’s WiFi password and network name keeps your network secure. Follow these steps to change your WiFi password and SSID:
+                        </p>
+
+                        <div class="my-[30px] bg-[#EF4444] p-[30px] bg-opacity-10 rounded-[10px]">
+                            <ol class="list-decimal space-y-4 ps-5">
+                                <li><b class="font-medium text-red">Log in</b> to your router’s admin console.</li>
+                                <li>Navigate to the <b class="font-medium text-red">wireless network settings</b> or <b class="font-medium text-red">WiFi configuration section.</b></li>
+                                <li>Look for options related to the <b class="font-medium text-red">WiFi password</b> or <b class="font-medium text-red">SSID</b></li>
+                                <li>Enter your desired<b class="font-medium text-red"> new password or network name (SSID).</b></li>
+                                <li><b class="font-medium text-red">Save the changes</b> and allow your router to apply the modifications.</li>
+                                <li>Password  and SSID changes kick out all connected devices.<b class="font-medium text-red"> Reconnect</b> all your devices to the WiFi network using the new name and password.</li>
+                            </ol>
+                        </div>
+
+                        <h2 class="text-4xl font-semibold mb-5">Common Misspellings for IP 192.168.0.1:</h2>
+
+                        <p>
+                            Typos and misspellings will render your default IP address invalid. Here are the common misspellings for IP 192.168.0.1 to avoid:
+                        </p>
+
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-[10px] my-[30px]">
+                            <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                            <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                            <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                            <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+                        </div>
+
+                        <p>
+                            Before clicking enter, verify you have entered the default IP address correctly. This is crucial, especially if your input font is fancy. You don’t want to write 1 as the lowercase letter l.
+                        </p>
+
+                        <h2 class="text-4xl font-semibold mb-5">Popular Router Brands Using 192.168.0.1 Login IP:</h2>
+
+                        <p>
+                            Several renowned router manufacturers employ 192.168.0.1 as the default IP address. Here are some popular router brands that commonly use this IP address:
+                        </p>
+
+                        <ol class="list-decimal space-y-4 my-[30px] ps-5">
+                            <li>
+                                <a href="javascript:void(0);" class="text-red font-medium underline">Linksys:</a> A trusted name in home networking that often adopts 192.168.0.1 as the default  router IP address.
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="text-red font-medium underline">Linksys:</a> Renowned for high-performance routers that frequently utilize 192.168.0.1 for administrative access.
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="text-red font-medium underline">D-Link:</a> Offering a diverse range of routers, D-Link models often rely on 192.168.0.1 for login purposes.
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="text-red font-medium underline">TP-Link:</a> Known for affordable and feature-rich routers that typically adopt 192.168.0.1 as the default gateway.
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="text-red font-medium underline">Asus:</a> Combining speed and reliability, Asus routers frequently employ 192.168.0.1 for accessing administrative settings.
+                            </li>
+                        </ol>
+
+                        <h2 class="text-4xl font-semibold mb-5">Troubleshooting 192.168.0.1 Login:</h2>
+
+                        <p>
+                            All aspects considered, logging in to 192.168.0.1 should be a straightforward process. Yet, it isn’t the case. Sometimes, you will encounter login frustrations. Here are the common causes of login problems and how to troubleshoot them:
+                        </p>
+
+                        <ol class="list-decimal space-y-4 my-[30px] ps-5">
+                            <li>
+                                <a href="javascript:void(0);" class="text-red font-medium underline">Incorrect IP address:</a> Typos and misspellings will render the router’s IP address incorrect. Double check the correct IP address on your user manual and ensure you input it correctly. 
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="text-red font-medium underline">Faulty network:</a> A seamless internet connection is crucial for the success of the login process. Ensure the login device is connected to the router’s network and the connection is excellent.
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="text-red font-medium underline">Clear browser cache:</a> Remove any cached data that might interfere with the login process. This includes the caches, cookies, and your browser’s history.
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="text-red font-medium underline">Router firmware issues:</a> You may encounter a login error if the router’s firmware has issues. To resolve such an issue, check whether there is a firmware update for your router and update it. If not, reboot the router and login in again.
+                            </li>
+                        </ol>
+
+                        <!-- faq start here -->
+                        <h2 class="text-4xl font-semibold mb-5">Frequently Asked Questions</h2>
+                        <div class="hs-accordion-group mb-10">
+                            <div class="hs-accordion active border-b border-[#E9E9E9]" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+                              <button class="hs-accordion-toggle hs-accordion-active:text-red py-3 inline-flex items-center justify-between gap-x-3 w-full font-medium text-start hover:text-red disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one">
+                                What is the router admin login code?
+                                <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                                <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="m18 15-6-6-6 6"></path>
+                                </svg>
+                              </button>
+                              <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
+                                <p>
+                                    The router admin login code is  the username and password you need to access your router's settings. This code varies depending on the router make and model. Check your router user manual or consult your manufacturer to verify your router’s admin login code.
+                                </p>
+                              </div>
+                            </div>
+                          
+                            <div class="hs-accordion border-b border-[#E9E9E9]" id="hs-basic-with-title-and-arrow-stretched-heading-two">
+                              <button class="hs-accordion-toggle hs-accordion-active:text-red py-3 inline-flex items-center justify-between gap-x-3 w-full font-medium text-start hover:text-red disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two">
+                                How do I login to my 192.168.0.1 router?
+                                <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                                <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="m18 15-6-6-6 6"></path>
+                                </svg>
+                              </button>
+                              <div id="hs-basic-with-title-and-arrow-stretched-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two">
+                                <p>
+                                    The router admin login code is  the username and password you need to access your router's settings. This code varies depending on the router make and model. Check your router user manual or consult your manufacturer to verify your router’s admin login code.
+                                </p>
+                              </div>
+                            </div>
+                          
+                            <div class="hs-accordion border-b border-[#E9E9E9]" id="hs-basic-with-title-and-arrow-stretched-heading-three">
+                              <button class="hs-accordion-toggle hs-accordion-active:text-red py-3 inline-flex items-center justify-between gap-x-3 w-full font-medium text-start hover:text-red disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three">
+                                Why is 192.168.0.1 not opening?
+                                <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                                <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="m18 15-6-6-6 6"></path>
+                                </svg>
+                              </button>
+                              <div id="hs-basic-with-title-and-arrow-stretched-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three">
+                                <p>
+                                    The router admin login code is  the username and password you need to access your router's settings. This code varies depending on the router make and model. Check your router user manual or consult your manufacturer to verify your router’s admin login code.
+                                </p>
+                              </div>
+                            </div>
+
+                            <div class="hs-accordion border-b border-[#E9E9E9]" id="hs-basic-with-title-and-arrow-stretched-heading-four">
+                                <button class="hs-accordion-toggle hs-accordion-active:text-red py-3 inline-flex items-center justify-between gap-x-3 w-full font-medium text-start hover:text-red disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four">
+                                What is the 192.168.0.1 password for Wi-Fi?
+                                  <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                  </svg>
+                                  <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m18 15-6-6-6 6"></path>
+                                  </svg>
+                                </button>
+                                <div id="hs-basic-with-title-and-arrow-stretched-collapse-four" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four">
+                                  <p>
+                                      The router admin login code is  the username and password you need to access your router's settings. This code varies depending on the router make and model. Check your router user manual or consult your manufacturer to verify your router’s admin login code.
+                                  </p>
+                                </div>
+                              </div>
+
+                              <div class="hs-accordion border-b border-[#E9E9E9]" id="hs-basic-with-title-and-arrow-stretched-heading-five">
+                                <button class="hs-accordion-toggle hs-accordion-active:text-red py-3 inline-flex items-center justify-between gap-x-3 w-full font-medium text-start hover:text-red disabled:opacity-50 disabled:pointer-events-none" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five">
+                                What is my Wi-Fi admin login? 
+                                  <svg class="hs-accordion-active:hidden block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                  </svg>
+                                  <svg class="hs-accordion-active:block hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m18 15-6-6-6 6"></path>
+                                  </svg>
+                                </button>
+                                <div id="hs-basic-with-title-and-arrow-stretched-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five">
+                                  <p>
+                                      The router admin login code is  the username and password you need to access your router's settings. This code varies depending on the router make and model. Check your router user manual or consult your manufacturer to verify your router’s admin login code.
+                                  </p>
+                                </div>
+                              </div>
+                          </div>
+                        <!-- faq end here -->
+
+                        <div class="bg-[#EF4444] bg-opacity-10 p-8 pb-3 border-l-[6px] border-[#EF4444] rounded-[10px]">
+                            <h3 class="mb-4 text-red font-medium text-[22px]">Conclusion</h3>
+                            <p>
+                                Logging into your router should be easy with the right gateway IP address. All you need to do is input the IP address on your web browser, then login with a username and password. These login credentials are available on the router manual to make it easy to access your network settings.
+                            </p>
+                        </div>
+
+                    </div>
+                    <!-- left col end here -->
+
+                    <!-- right sidebar start here -->
+                    <div class="lg:w-[27%] w-full lg:ms-20 mt-7 lg:mt-0">
+                        <!-- search start -->
+                        <div class="relative border border-[#E9E9E9] mb-5 py-1">
+                            <button type="submit" class="absolute left-0 top-1/2 -translate-y-2/4 ml-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M10.9395 1.93164C5.98074 1.93164 1.94141 5.97096 1.94141 10.9297C1.94141 15.8884 5.98074 19.9356 10.9395 19.9356C13.0575 19.9356 15.0054 19.1933 16.5449 17.961L20.293 21.707C20.4821 21.8883 20.7347 21.9884 20.9967 21.9857C21.2587 21.983 21.5093 21.8779 21.6947 21.6927C21.8801 21.5076 21.9856 21.2572 21.9886 20.9953C21.9917 20.7333 21.892 20.4805 21.7109 20.2911L17.9629 16.5431C19.1963 15.0012 19.9395 13.0502 19.9395 10.9297C19.9395 5.97096 15.8982 1.93164 10.9395 1.93164ZM10.9395 3.93167C14.8173 3.93167 17.9375 7.05187 17.9375 10.9297C17.9375 14.8075 14.8173 17.9356 10.9395 17.9356C7.06162 17.9356 3.94141 14.8075 3.94141 10.9297C3.94141 7.05187 7.06162 3.93167 10.9395 3.93167Z" fill="#27272A" fill-opacity="0.7"/>
+                                </svg>
+                            </button>
+                            <input class="w-full bg-white h-12 px-5 ps-12 text-base text-opacity-70 focus:outline-none"
+                              type="search" name="search" placeholder="Search this website">
+                        </div>
+                        <!-- search end -->
+
+                        <!-- top deals start -->
+                        <div class="">
+                            <h3 class="text-[22px] font-semibold text-white bg-red py-3 text-center rounded-[10px] rounded-bl-none rounded-br-none">Top VPNs</h3>
+
+                            <!-- ExpressVPN Deals -->
+                            <div class="pt-5 pb-8 border border-[#EF4444] text-center px-8">
+                                <div class="bg-red text-white py-2 text-sm font-medium mb-4 rounded-full max-w-36 mx-auto">Our #1 Pick</div>
+                                <img src="images/express-vpn-logo.svg" alt="ExpressVPN" class="mx-auto mb-4 w-full" />
+                                <div class="rating-stars flex justify-center gap-1 mb-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4453)">
+                                        <path d="M23.4617 9.35978L23.4619 9.36033C23.5581 9.65681 23.4688 9.98026 23.2341 10.1856L23.2337 10.186L17.9977 14.7771L17.7738 14.9734L17.8397 15.2637L19.3836 22.0647C19.4526 22.3691 19.3345 22.6832 19.0818 22.8664L19.0818 22.8664C18.8297 23.0492 18.4957 23.0632 18.2309 22.9039L18.2298 22.9032L12.2567 19.332L12.0002 19.1787L11.7436 19.332L5.76836 22.9032L5.76814 22.9033C5.64357 22.9779 5.50723 23.0144 5.37098 23.0144C5.21246 23.0144 5.05409 22.9652 4.91671 22.8659C4.6651 22.684 4.54653 22.3705 4.6155 22.0647C4.61552 22.0646 4.61554 22.0646 4.61556 22.0645L6.15943 15.2637L6.22533 14.9734L6.00151 14.7771L0.76548 10.1851L0.764531 10.1842C0.531162 9.98062 0.441917 9.65699 0.538297 9.36059C0.634583 9.06448 0.895605 8.85563 1.20535 8.8268C1.20551 8.82678 1.20568 8.82677 1.20584 8.82675L8.13318 8.19784L8.43046 8.17085L8.54776 7.89636L11.2866 1.48682C11.2867 1.48671 11.2867 1.48659 11.2868 1.48647C11.4104 1.19864 11.6901 1.01465 12.0001 1.01465C12.3103 1.01465 12.59 1.19877 12.7135 1.48558C12.7136 1.48576 12.7137 1.48594 12.7138 1.48611L15.4525 7.89633L15.5698 8.17085L15.8671 8.19784L22.7941 8.82683L22.7944 8.82686C23.1045 8.8548 23.3662 9.06428 23.4617 9.35978Z" fill="url(#paint0_linear_216_4453)" stroke="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_216_4453" x1="24" y1="9.99969" x2="1.5" y2="9.99969" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.495" stop-color="white"/>
+                                        <stop offset="0.4951" stop-color="#FFC107"/>
+                                        </linearGradient>
+                                        <clipPath id="clip0_216_4453">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <p class="text-sm text-opacity-70">30 Day money back guarantee</p>
+                                <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-[10px] block px-12 hover:opacity-70">Visit ExpressVPN</a>
+                            </div>
+
+                            <!-- CyberGhost Deals -->
+                            <div class="pt-5 pb-8 border border-[#E9E9E9] text-center px-8">
+                                <img src="images/cyber-ghost-logo.svg" alt="CyberGhost" class="mx-auto mb-4 w-full" />
+                                <div class="rating-stars flex justify-center gap-1 mb-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4453)">
+                                        <path d="M23.4617 9.35978L23.4619 9.36033C23.5581 9.65681 23.4688 9.98026 23.2341 10.1856L23.2337 10.186L17.9977 14.7771L17.7738 14.9734L17.8397 15.2637L19.3836 22.0647C19.4526 22.3691 19.3345 22.6832 19.0818 22.8664L19.0818 22.8664C18.8297 23.0492 18.4957 23.0632 18.2309 22.9039L18.2298 22.9032L12.2567 19.332L12.0002 19.1787L11.7436 19.332L5.76836 22.9032L5.76814 22.9033C5.64357 22.9779 5.50723 23.0144 5.37098 23.0144C5.21246 23.0144 5.05409 22.9652 4.91671 22.8659C4.6651 22.684 4.54653 22.3705 4.6155 22.0647C4.61552 22.0646 4.61554 22.0646 4.61556 22.0645L6.15943 15.2637L6.22533 14.9734L6.00151 14.7771L0.76548 10.1851L0.764531 10.1842C0.531162 9.98062 0.441917 9.65699 0.538297 9.36059C0.634583 9.06448 0.895605 8.85563 1.20535 8.8268C1.20551 8.82678 1.20568 8.82677 1.20584 8.82675L8.13318 8.19784L8.43046 8.17085L8.54776 7.89636L11.2866 1.48682C11.2867 1.48671 11.2867 1.48659 11.2868 1.48647C11.4104 1.19864 11.6901 1.01465 12.0001 1.01465C12.3103 1.01465 12.59 1.19877 12.7135 1.48558C12.7136 1.48576 12.7137 1.48594 12.7138 1.48611L15.4525 7.89633L15.5698 8.17085L15.8671 8.19784L22.7941 8.82683L22.7944 8.82686C23.1045 8.8548 23.3662 9.06428 23.4617 9.35978Z" fill="url(#paint0_linear_216_4453)" stroke="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_216_4453" x1="24" y1="9.99969" x2="1.5" y2="9.99969" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.495" stop-color="white"/>
+                                        <stop offset="0.4951" stop-color="#FFC107"/>
+                                        </linearGradient>
+                                        <clipPath id="clip0_216_4453">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <p class="text-sm text-opacity-70">30 Day money back guarantee</p>
+                                <a href="javascript:void(0);" class="bg-black interFont text-white text-base rounded-[5px] text-center py-[10px] block px-12 hover:opacity-70">Visit CyberGhost</a>
+                            </div>
+
+                            <!-- NordVPN Deals -->
+                            <div class="pt-5 pb-8 border border-[#E9E9E9] text-center px-8 rounded-[10px] rounded-tl-none rounded-tr-none">
+                                <img src="images/nord-vpn-logo.svg" alt="NordVPN" class="mx-auto mb-4 w-full" />
+                                <div class="rating-stars flex justify-center gap-1 mb-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4445)">
+                                        <path d="M23.9374 9.20597C23.7803 8.72 23.3493 8.37484 22.8393 8.32888L15.9123 7.69989L13.1731 1.28866C12.9712 0.818794 12.5112 0.514648 12.0001 0.514648C11.4891 0.514648 11.0291 0.818794 10.8271 1.28975L8.08797 7.69989L1.15982 8.32888C0.65077 8.37593 0.220828 8.72 0.0628038 9.20597C-0.0952203 9.69195 0.0507185 10.225 0.435799 10.561L5.67183 15.153L4.12785 21.9543C4.01487 22.4544 4.20897 22.9713 4.62389 23.2712C4.84692 23.4324 5.10785 23.5144 5.37098 23.5144C5.59786 23.5144 5.8229 23.4532 6.02487 23.3324L12.0001 19.7612L17.9732 23.3324C18.4103 23.5953 18.9612 23.5713 19.3752 23.2712C19.7904 22.9704 19.9843 22.4533 19.8713 21.9543L18.3273 15.153L23.5633 10.5619C23.9484 10.225 24.0955 9.69286 23.9374 9.20597Z" fill="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_216_4445">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_216_4453)">
+                                        <path d="M23.4617 9.35978L23.4619 9.36033C23.5581 9.65681 23.4688 9.98026 23.2341 10.1856L23.2337 10.186L17.9977 14.7771L17.7738 14.9734L17.8397 15.2637L19.3836 22.0647C19.4526 22.3691 19.3345 22.6832 19.0818 22.8664L19.0818 22.8664C18.8297 23.0492 18.4957 23.0632 18.2309 22.9039L18.2298 22.9032L12.2567 19.332L12.0002 19.1787L11.7436 19.332L5.76836 22.9032L5.76814 22.9033C5.64357 22.9779 5.50723 23.0144 5.37098 23.0144C5.21246 23.0144 5.05409 22.9652 4.91671 22.8659C4.6651 22.684 4.54653 22.3705 4.6155 22.0647C4.61552 22.0646 4.61554 22.0646 4.61556 22.0645L6.15943 15.2637L6.22533 14.9734L6.00151 14.7771L0.76548 10.1851L0.764531 10.1842C0.531162 9.98062 0.441917 9.65699 0.538297 9.36059C0.634583 9.06448 0.895605 8.85563 1.20535 8.8268C1.20551 8.82678 1.20568 8.82677 1.20584 8.82675L8.13318 8.19784L8.43046 8.17085L8.54776 7.89636L11.2866 1.48682C11.2867 1.48671 11.2867 1.48659 11.2868 1.48647C11.4104 1.19864 11.6901 1.01465 12.0001 1.01465C12.3103 1.01465 12.59 1.19877 12.7135 1.48558C12.7136 1.48576 12.7137 1.48594 12.7138 1.48611L15.4525 7.89633L15.5698 8.17085L15.8671 8.19784L22.7941 8.82683L22.7944 8.82686C23.1045 8.8548 23.3662 9.06428 23.4617 9.35978Z" fill="url(#paint0_linear_216_4453)" stroke="#FFC107"/>
+                                        </g>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_216_4453" x1="24" y1="9.99969" x2="1.5" y2="9.99969" gradientUnits="userSpaceOnUse">
+                                        <stop offset="0.495" stop-color="white"/>
+                                        <stop offset="0.4951" stop-color="#FFC107"/>
+                                        </linearGradient>
+                                        <clipPath id="clip0_216_4453">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <p class="text-sm text-opacity-70">30 Day money back guarantee</p>
+                                <a href="javascript:void(0);" class="bg-black interFont text-white text-base rounded-[5px] text-center py-[10px] block px-12 hover:opacity-70">Visit NordVPN</a>
+                            </div>
+
+                            <!-- recent posts start -->
+                            <div class="recentPosts mt-7">
+                                <h3 class="text-[22px] font-medium mb-3">Recent Posts</h3>
+                                <ul class="">
+                                    <li class="border-b border-[#e1e1e1] py-[10px]">
+                                        <a href="javascript:void(0);" class="text-base underline hover:text-red">Find Router IP Address (Latest Guide)</a>
+                                    </li>
+                                    <li class="border-b border-[#e1e1e1] py-[10px]">
+                                        <a href="javascript:void(0);" class="text-base underline hover:text-red">How to Hack WiFi Network & Get Login Credentials (Guide)</a>
+                                    </li>
+                                    <li class="border-b border-[#e1e1e1] py-[10px]">
+                                        <a href="javascript:void(0);" class="text-base underline hover:text-red">All You Need To Know About Bullying: Online and Off</a>
+                                    </li>
+                                    <li class="border-b border-[#e1e1e1] py-[10px]">
+                                        <a href="javascript:void(0);" class="text-base underline hover:text-red">Comparison of VPN Protocols: OpenVPN, WireGuard, IPSec, L2TP, and IKEv2</a>
+                                    </li>
+                                    <li class="border-b border-[#e1e1e1] py-[10px]">
+                                        <a href="javascript:void(0);" class="text-base underline hover:text-red">A Complete Guide to VPN Routers</a>
+                                    </li>
+                                    <li class="border-b border-[#e1e1e1] py-[10px]">
+                                        <a href="javascript:void(0);" class="text-base underline hover:text-red">Best Routers for Gaming | Top 6 Gaming Routers of 2021</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- top deals end -->
+
+                    </div>
+                    <!-- right sidebar end here -->
+                </div>
+            </div>
+        </section>
+        <!-- Login Admin section end here -->
+
+        <!-- popular ip addresses start here -->
+        <section class="bg-white py-24">
+            <div class="container">
+                <h2 class="text-4xl font-medium text-center mb-[30px]">Popular IP Addresses</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-[30px]">
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <p class="font-medium interFont">192.168.1.1</p>
+                        <a href="192-168-1-1.html" class="bg-red interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popular ip addresses end here -->
+
+        <!-- popular router brands start here -->
+        <section class="bg-[#F6F6F6] py-24">
+            <div class="container">
+                <h2 class="text-4xl font-medium text-center mb-[30px]">Popular Router Brands</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[30px]">
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/cisco.svg" alt="Cisco" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/comtrend.svg" alt="Comtrend" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/tenda.svg" alt="Tenda" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/nksys.svg" alt="Nksys" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/belkin.svg" alt="Belkin" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/arris.svg" alt="ARRIS" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/netgear.svg" alt="Netgear" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/d-link.svg" alt="D-Link" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/tp-link.svg" alt="Tp-Link" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+
+                    <div class="bg-white shadow-custom rounded-[10px] py-7 px-10 text-center">
+                        <div class="h-20 flex justify-center items-center mb-5">
+                            <img src="images/brands-logo/asus.svg" alt="ASUS" />
+                        </div>
+                        <a href="javascript:void(0);" class="bg-green interFont text-white text-base rounded-[5px] text-center py-2 w-full block">Login</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popular router brands end here -->
+
+        <!-- Popular IP Misspellings start here -->
+        <section class="bg-white py-24">
+            <div class="container">
+                <h2 class="text-4xl font-medium text-center mb-[30px]">Popular IP Misspellings</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-[10px]">
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+
+                    <a href="javascript:void(0);" class="font-medium interFont w-full py-3 px-10 flex justify-center bg-white border border-[#E9E9E9] rounded-[31px] text-center">192.168.1.1</a>
+                </div>
+            </div>
+        </section>
+        <!-- Popular IP Misspellings end here -->
+
+        <footer class="bg-[#27272A] pt-24 pb-5 text-center">
+            <div class="container">
+                <a href="index.html">
+                    <img src="images/foot-logo.svg" alt="Router Login" class="mx-auto" />
+                </a>
+                <ul class="mt-[30px] flex flex-col md:flex-row justify-center gap-7 mb-12">
+                    <li>
+                        <a href="javascript:void(0);" class="text-white text-base hover:text-red">Router Login</a>
+                    </li>
+                    <li>
+                        <a href="articles.html" class="text-white text-base hover:text-red">Articles</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="text-white text-base hover:text-red">IP index</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="text-white text-base hover:text-red">Contact</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="text-white text-base hover:text-red">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="text-white text-base hover:text-red">Terms & Condition</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="text-white text-base hover:text-red">Cookies Policy</a>
+                    </li>
+                </ul>
+
+                <p class="text-white text-sm interFont opacity-70">© 2024 Copyright: RouterLogin</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Javascript Code -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/custom-script.js" type="text/javascript"></script>
+    <script src="../node_modules/preline/dist/preline.js" type="text/javascript"></script>
+</body>
+</html>
